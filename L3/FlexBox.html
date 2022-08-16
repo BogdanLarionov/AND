@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+</head>
+
+<style>
+          :root {
+                    --background-color: #008000;
+                    --text: center;
+                    --padding: 1rem;
+
+                    /* переменная */
+          }
+
+          .top:hover {
+                    opacity: .9;
+                    background: rgb(45, 7, 20);
+          }
+
+          * {
+                    margin: 0;
+                    padding: 0;
+                    /* что бы небыло отступов у бади  */
+          }
+
+          .wrapper {
+                    display: flex;
+                    /* меняет поведение блока не на всю длину блока!  */
+                    height: 100vh;
+                    /* 100% высоа окна браузера радительского блока */
+                    /* min-width: 50vw; */
+                    /* ширина окна браузера */
+          }
+
+          .left {
+                    /* background: red; */
+                    background: var(--background-color);
+                    width: 12rem;
+                    /* width: 25%; ширина окна браузера  дочернего блока*/
+                    border-left: 1px solid var(--border-color);
+                    /* переменная */
+                    padding: var(--padding) .5rem;
+                    text-align: var(--text);
+                    /*padding - внутренний отступ  */
+                    /* margin: ; внешний отступ */
+          }
+
+          .center {
+                    background: blue;
+                    width: calc(100% - 12rem);
+                    /* функция калк. 100% родительского блока отнимаем - ширину 12rem дочернего блока, без пробелов не работает! */
+                    padding: var(--padding);
+                    text-align: var(--text);
+                    /* width: 50%; */
+                    /* width: 50%; ширина окна браузера дочернего блока*/
+          }
+
+          .right {
+                    background: yellow;
+                    width: 25%;
+                    /* width: 25%; ширина окна браузера дочернего блока*/
+                    border-left: 1px solid black;
+                    padding: var(--padding);
+                    text-align: var(--text);
+          }
+
+          .top {
+                    border-bottom: 1px solid black;
+                    background: palevioletred;
+                    padding: var(--padding);
+                    height: 3rem;
+                    text-align: var(--text);
+                    opacity: .5;
+
+          }
+</style>
+
+<body>
+          <div class="top">top block</div>
+
+          <div class="wrapper">
+                    <!--wrapper обертка -->
+                    <div class="left">Left panel</div>
+
+                    <div class="center">Center</div>
+
+                    <div class="right">Right</div>
+          </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <style>
+                    .card__picture {
+                              border-radius: 12px;
+
+                    }
+                    .card p{
+
+                    }
+          </style>
+</head>
+<body>
+          <!-- БЭМ: методология - Блок/Элемент/Модификатор -->
+          <!-- каждый элемент получил определенный класс!  class="card__title , оброщаемся к селектору по классу .card__picture {-->
+                    <!-- наименование блоков и под блоков они отвечают на вопрос что это ! card,card__title-->
+                    <!--  у блока может быть разделитель! card_product-->
+                    <!-- модификатор отвечают на вопрос какой,какая, какое card card__dark -->
+                    
+          <div class="card card__dark">
+                    <h1 class="card__title">
+                              Валенки
+                    </h1>
+          
+                    <h2 class="card__id">
+                              Артикул 003523
+                    </h2>
+                    <!-- индефикатор -->
+                    <h3 class="card__price">
+                              $500
+                    </h3>
+          
+                    <img class="card__picture" src="" alt="">
+          
+                           <p class="card__description">
+                              <!-- характктеристики, описание товара -->
+          
+                              Размер: ..
+                    </p>
+          </div>
+          
+          <div class="menu">
+                    <!-- div class="menu получил класс, под меню получил класс menu__item и модификатор menu__item--active -->
+                                        <!-- модификатор menu__item--active -->
+                    <a class="menu__item menu__item--active menu__item--red" href="">Home</a>
+                                                  <!-- menu__item--active блок-название блока- модификатор -->
+                                                  <!-- название блока- название элемента- название модификатора menu--item__red может быть и такой подход! -->
+                    <a class="menu__item" href="">About</a>
+          </div>
+
+</body>
+</html>

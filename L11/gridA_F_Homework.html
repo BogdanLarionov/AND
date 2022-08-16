@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        text-align: center;
+        line-height: 20rem;
+
+        color: #c6f5f5;
+        font-size: 4rem;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "a b d"
+          "e c c"
+          "f c c";
+      }
+      .a {
+        background: #01db9b;
+        grid-area: a;
+      }
+      .b {
+        background: #df9801;
+        grid-area: b;
+      }
+      .c {
+        background: #99dd00;
+        grid-area: c;
+      }
+      .d {
+        background: #9c00e0;
+        grid-area: d;
+      }
+      .e {
+        background: #df009c;
+        grid-area: e;
+      }
+      .f {
+        background: #009ade;
+        grid-area: f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="a">A</div>
+      <div class="b">B</div>
+      <div class="c">C</div>
+      <div class="d">D</div>
+      <div class="e">E</div>
+      <div class="f">F</div>
+    </div>
+  </body>
+</html>

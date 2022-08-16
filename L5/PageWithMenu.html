@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+          <link rel="stylesheet"
+                    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+          <link rel="stylesheet" href="/Lessons/L5/css/mobailForPageMenu.css">
+          <!-- Icons - источникx -->
+          <style>
+                    * {
+                              /* астерикс */
+                              margin: 0;
+                              padding: 0;
+                    }
+
+                    .menu {
+                              background: rgb(201, 201, 235);
+                              height: 5rem;
+                              width: 100vw;
+                              /* ширина 100 во весь экран */
+
+                              position: fixed;
+                              /* для меню зафексировали + body */
+                              top: 0;
+                              /* bottom:0; меню будет в низу */
+
+                              display: flex;
+                              justify-content: space-around;
+                              align-items: center;
+                    }
+
+                    .menu a {
+                              width: calc(100% / 4 - 8rem);
+                              text-align: center;
+                              text-decoration: none;
+                              color: brown;
+                              background: white;
+                              border-radius: 8px;
+                    }
+
+                    body {
+                              height: 200vh;
+                              /*эскуственное увеличение размера страгици- прокрутка  */
+                    }
+          </style>
+</head>
+
+<body>
+          <div class="menu">
+                    <a href="home.com" target="_block">Home <i class="las la-home"></i></a>
+                    <a href="#">About <i class="las la-address-card"></i></a>
+                    <a href="#">Service <i class="las la-search"></i></a>
+                    <a href="#">Web Store <i class="las la-store"></i></a>
+          </div>
+</body>
+
+</html>

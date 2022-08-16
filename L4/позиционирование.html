@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+          <style>
+                    /* .first-class,
+.second-class,
+nth-class{
+          background: white;
+} 
+- оптимизация 
+*/
+
+                    .wrapper div {
+                              /* оптемизируем код */
+                              position: absolute;
+                              width: 8rem;
+                              height: 8rem;
+                              color: aliceblue;
+                              font-size: 2rem;
+                              /* размер шрифта */
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                    }
+
+                    .wrapper div:nth-child(1) {
+                              /* .wrapper div:firsh-child{  - можно писать так  */
+
+                              /*  */
+                              bottom: 0;
+                              right: 0;
+                              background: blue;
+                    }
+
+                    .wrapper div:nth-child(2) {
+                              /* .wrapper div:last-child{  - можно писать так  */
+
+                              bottom: 50%;
+                              left: 40%;
+                              background: rgb(190, 238, 18);
+                    }
+
+                    .wrapper div:nth-child(3) {
+                              /* .wrapper div:last-child{  - можно писать так  */
+
+                              top: 0;
+                              left: 0;
+                              background: rgb(168, 7, 74);
+                    }
+          </style>
+</head>
+
+<body>
+          <div class="wrapper">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+          </div>
+</body>
+
+</html>

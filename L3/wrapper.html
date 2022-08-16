@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=
+          , initial-scale=1.0" />
+          <title>Document</title>
+
+          <style>
+                    * {
+                              margin: 0;
+                              padding: 0;
+                    }
+
+                    .wrapper div {
+                              background: grey;
+                              height: 3rem;
+                              width: 3rem;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              transition: all 0.2s ease-out;
+                    }
+
+                    .wrapper {
+                              display: flex;
+                              /*display: flex; автомотически будет  flex-direction:row горизонт, если нужно вертикаль то  flex-direction:column */
+                              justify-content: space-between;
+
+                              flex-direction: column;
+                              /* напровление по вертикали */
+                              align-items: center;
+                              /* центрирует  */
+                              height: 100vh;
+                              /* отступ  */
+                    }
+
+                    .wrapper div:nth-child(odd) {
+                              /* псевдо клас  :nth-child(odd) - нечетный  энный потомок (even)- четный ,1,2  */
+                              background: blue;
+                    }
+
+                    .wrapper div:hover {
+                              background: red;
+                    }
+          </style>
+</head>
+
+<body>
+          <div class="wrapper">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+          </div>
+</body>
+
+</html>

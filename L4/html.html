@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+
+          <style>
+                    * {
+                              margin: 0;
+                              padding: 0;
+                    }
+
+                    .wrapper {
+                              display: flex;
+                              flex-wrap: wrap;
+                              /*flex-wrap: wrap; - перенос на новую строчку элементы  */
+                    }
+
+                    .wrapper div {
+                              /* у силектор wrapper потомок div  должен иметь фото ниже*/
+                              background: url(https://www.wpbeginner.com/wp-content/uploads/2020/03/ultimate-small-business-resource-coronavirus.png);
+                              /*      background: url(https://www. - добавили фото по урл в бакграунд  */
+
+                              background-size: cover;
+                              /* розмер background - cover обложка */
+                              background-position: center;
+                              /* позиция фона центер */
+                              /* в комбинации эти два свойства ставят кортинку по центру и заполняют в див заданный параметрам */
+
+                              height: calc(100vw / 4);
+                              /* height: 5rem; */
+
+                              /* width: 5rem;  */
+                              width: calc(100vw / 4);
+                              /* заполнит всю ширину из 4  */
+                              transition: all 0.2s ease-out;
+                              /* эфект плавный */
+                    }
+
+                    .wrapper div:hover {
+                              transform: rotate(-90deg) scale(1.2);
+                              /* при навидении на обьект начинает накланяться на 4 градусса "deg" -90градуссов меняет напровление  + scale - меняет маштаб 1-100% 1.2-120%  */
+                              transition: all 0.2s ease-out;
+                    }
+          </style>
+</head>
+
+<body>
+          <div class="wrapper">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <div></div>
+          </div>
+</body>
+
+</html>

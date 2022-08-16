@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Gantari", sans-serif;
+}
+
+@media screen and (min-width: 769px) {
+  .footer,
+  .mastercard,
+  .logo-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* это фиксирует элемент в текущей позиции */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+    z-index: 10;
+  }
+  .header img {
+    width: 32px;
+    border-radius: 50%;
+  }
+  .header h1 {
+    font-size: 1.25rem;
+    margin-right: auto;
+    font-weight: 400;
+  }
+
+  .logo-icon {
+    font-size: 34px;
+    padding-right: 5px;
+  }
+
+  .wrapper {
+    padding: 71px 0 0 0;
+  }
+
+  .wallet .card {
+    /* background: #6951ff; */
+    /* background: linear-gradient(180deg,red, blue); */
+    background: linear-gradient(180deg, #6e5fd6, #6750f9);
+    color: white;
+    padding: 0.75rem;
+    border-radius: 10px;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px #7e7e7e7d;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card .round {
+    width: 165px;
+    height: 165px;
+    border: 3px solid #5c4af1; /* это вс> кружок */
+    border-radius: 100%;
+    position: absolute;
+    top: -43px;
+    right: -48px;
+  }
+  .card .round-2 {
+    top: -20px;
+    right: -28px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .card .round-3 {
+    top: auto;
+    bottom: -90px;
+    left: -68px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .wallet h1 {
+    padding: 0.3rem;
+  }
+
+  .wallet h3 {
+    padding: 0.5rem;
+  }
+
+  .wallet h6 {
+    margin: 0.5rem;
+  }
+  .transaction .top {
+    background-color: rgb(221, 226, 233);
+    padding: 1rem;
+    /* width: 22rem; */
+    height: 15rem;
+    border-radius: 10px;
+    display: flex;
+  }
+
+  .transaction .view_all {
+    justify-content: first baseline;
+  }
+
+  .footer {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; /* это фиксирует элемент в текущей позиции */
+    bottom: 0; /* это значит что снизу */
+    right: 0;
+    left: 0;
+    background-color: white;
+  }
+
+  .icon1 {
+  }
+
+  .ivan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
+  }
+
+  .mastercard {
+    display: flex;
+    margin-left: auto;
+    font-size: 20px;
+  }
+  .mastercard i:first-child {
+    margin-right: -13px;
+  }
+
+  .transaction {
+    width: 340px;
+    height: 50px;
+  }
+
+  .extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .dop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 60px;
+    margin-bottom: -10px;
+  }
+
+  .extra-card h6 {
+    margin-left: 19px;
+  }
+
+  .recent-transactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    height: 2rem;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+  }
+
+  .icon-transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+
+    height: 2rem;
+    display: flex;
+
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+  }
+
+  .icons-transactions {
+    font-size: 54px;
+    padding-right: 5px;
+  }
+
+  .icon-transaction h3 {
+    font-size: 1rem;
+    margin-right: auto;
+    font-weight: 400;
+  }
+
+  .tr2 {
+    padding: 71px 0 0 0;
+    margin-right: +37px;
+  }
+}

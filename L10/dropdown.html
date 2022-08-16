@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dropdown {
+        display: inline-block;
+        cursor: pointer;
+        width: 140px;
+        position: relative;
+      }
+      .dropdown--button {
+        background: blue;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 6px;
+      }
+      .dropdown--items {
+        display: none;
+        background: rgb(247, 247, 247);
+        box-shadow: 0 0 11px 8px rgb(0 0 0 / 4%);
+        position: absolute;
+        width: 100%;
+      }
+
+      .dropdown:active .dropdown--items,
+      .dropdown:hover .dropdown--items {
+        display: block;
+      }
+
+      .dropdown--item {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        color: black;
+        
+      }
+
+      .dropdown--item:hover{
+          background:#fff;
+      }
+    </style>
+  </head>
+  <body>
+          <h1>Home page</h1>
+    <div class="dropdown">
+      <div class="dropdown--button">Settings</div>
+
+      <div class="dropdown--items">
+        <a href="" class="dropdown--item">Item 1</a>
+        <a href="" class="dropdown--item">Item 2</a>
+        <a href="" class="dropdown--item">Item 3</a>
+        
+          
+
+
+
+      </div>
+    </div>
+    <h2>User profile</h2>
+  </body>
+</html>

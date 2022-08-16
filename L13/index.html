@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --menu-width: 20rem;
+      }
+      body {
+        margin: 0;
+      }
+      .menu {
+        background: blue;
+        height: 100vh;
+        width: var(--menu-width);
+        transform: translateX(calc(var(--menu-width) * -1));
+        transition: all 0.3s ease-out;
+      }
+
+      .menu--active {
+        transform: rotateX(0);
+      }
+
+      .button {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu"></div>
+    <button onclick="toggleMenu()" class="button">Show Menu</button>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu");
+        menu.classList.toggle("menu--active");
+      }
+    </script>
+  </body>
+</html>

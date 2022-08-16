@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <script>
+    function ToggleMenu() {
+      const menu = document.querySelector(".menu");
+      menu.classList.toggle("menu--active");
+    }
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      height: 300vh;
+    }
+    .menu {
+      box-sizing: border-box;
+      position: fixed;
+      background: #ccc;
+      height: 100vh;
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+      font-size: 1.25rem;
+      transition: all 1s ease-out;
+      transform: translateX(-20rem);
+    }
+
+    .menu.menu--active {
+      transform: translateX(0);
+    }
+    .menu-toggle {
+      font-size: 2rem;
+      text-align: right;
+      padding: 2rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    @media screen and (max-width: 768px) {
+    }
+  </style>
+  <body>
+    <div class="menu">
+      <div>About</div>
+      <div>Catalog</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>About</div>
+      <div>Catalog</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+
+    <div class="menu-toggle" onclick="ToggleMenu()">+</div>
+  </body>
+</html>
+
+<!--   <style>
+    .menu {
+      box-sizing: border-box;
+      position: fixed;
+      background: #ccc;
+      height: 100vh;
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+      font-size: 1.25rem;
+      transition: all 1s ease-out;
+      transform: translateX(-20rem);
+    }
+
+    .menu.menu--active {
+      transform: translateX(0);
+      
+    }
+    .menu-toggle{
+text-align:right;
+      padding: 2rem;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="menu">
+      <div>About</div>
+      <div>Catalog</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>About</div>
+      <div>Catalog</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+
+    <div class="menu-toggle">menu</div> -->

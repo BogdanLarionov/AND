@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Gantari:wght@100,400,700&display=swap");
+
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Gantari", sans-serif;
+    }
+
+    @media screen and (min-width: 769px) {
+
+      .footer,
+      .mastercard,
+      .logo-icon {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        /* это фиксирует элемент в текущей позиции */
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 1rem;
+        z-index: 10;
+      }
+
+      .header img {
+        width: 32px;
+        border-radius: 50%;
+      }
+
+      .header h1 {
+        font-size: 1.25rem;
+        margin-right: auto;
+        font-weight: 400;
+      }
+
+      .logo-icon {
+        font-size: 34px;
+        padding-right: 5px;
+      }
+
+      .wrapper {
+        padding: 71px 0 0 0;
+      }
+
+      .wallet .card {
+        /* background: #6951ff; */
+        /* background: linear-gradient(180deg,red, blue); */
+        background: linear-gradient(180deg, #6e5fd6, #6750f9);
+        color: white;
+        padding: 0.75rem;
+        border-radius: 10px;
+        height: 11rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 10px 20px #7e7e7e7d;
+        margin: 1rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card .round {
+        width: 165px;
+        height: 165px;
+        border: 3px solid #5c4af1;
+        /* это вс> кружок */
+        border-radius: 100%;
+        position: absolute;
+        top: -43px;
+        right: -48px;
+      }
+
+      .card .round-2 {
+        top: -20px;
+        right: -28px;
+        width: 120px;
+        height: 120px;
+      }
+
+      .card .round-3 {
+        top: auto;
+        bottom: -90px;
+        left: -68px;
+        height: 150px;
+        width: 150px;
+      }
+
+      .wallet h1 {
+        padding: 0.3rem;
+      }
+
+      .wallet h3 {
+        padding: 0.5rem;
+      }
+
+      .wallet h6 {
+        margin: 0.5rem;
+      }
+
+      .transaction .top {
+        background-color: rgb(221, 226, 233);
+        padding: 1rem;
+        /* width: 22rem; */
+        height: 15rem;
+        border-radius: 10px;
+        display: flex;
+      }
+
+      .transaction .view_all {
+        justify-content: first baseline;
+      }
+
+      .footer {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        /* это фиксирует элемент в текущей позиции */
+        bottom: 0;
+        /* это значит что снизу */
+        right: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        border-radius: 23px 23px 0 0;
+      }
+
+      .icon1 {}
+
+      .ivan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 11;
+      }
+
+      .mastercard {
+        display: flex;
+        margin-left: auto;
+        font-size: 20px;
+      }
+
+      .mastercard i:first-child {
+        margin-right: -13px;
+      }
+
+      .transaction {
+        width: 340px;
+        height: 50px;
+      }
+
+      .extra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+      }
+
+      .dop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 60px;
+        margin-bottom: -10px;
+      }
+
+      .extra-card h6 {
+        margin-left: 19px;
+      }
+
+      .recent-transactions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem;
+        height: 2rem;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        padding: 1rem;
+      }
+
+      .icon-transaction {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem;
+
+        height: 2rem;
+        display: flex;
+
+        background-color: rgb(255, 255, 255);
+        padding: 1rem;
+      }
+
+      .icons-transactions {
+        font-size: 54px;
+        padding-right: 5px;
+      }
+
+      .icon-transaction h3 {
+        font-size: 1rem;
+        margin-right: auto;
+        font-weight: 400;
+      }
+
+      .tr2 {
+        padding: 71px 0 0 0;
+        margin-right: +37px;
+      }
+
+      .red {
+        height: 35px;
+        right: 35px;
+        background-color: red;
+        border-radius: 100%;
+      }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=0" />
+  <!-- для мобилы адaптация -->
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <!-- ссылка откуда берем текст -->
+</head>
+
+<body>
+  <!-- Берем врапер - обертка экрана  -->
+
+  <div class="header">
+    <div class="logo-icon">
+      <i class="lab la-stumbleupon-circle"></i>
+    </div>
+    <h1>Cash<strong>UP</strong></h1>
+    <div class="avatar">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="" />
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="wallet">
+      <h3>My Wallet</h3>
+      <!-- purpul block -->
+      <div class="card">
+        <div class="round round-1"></div>
+        <div class="round round-2"></div>
+        <div class="round round-3"></div>
+
+        <div class="top">
+          <h1>Gravity Bank</h1>
+          <h6>&#8364; 3.2490.90</h6>
+        </div>
+        <div class="ivan">
+          <div class="bottom">
+            <h3>Ivan Ivanov</h3>
+          </div>
+
+          <div class="mastercard">
+            <i class="las la-circle"></i>
+            <i class="las la-circle"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-card">
+        <div class="dop">
+          <h3>Dopamine Inc.</h3>
+          <h4>Visa</h4>
+        </div>
+        <h6>420.90 &#8364;</h6>
+        <!-- мимоника -->
+      </div>
+    </div>
+  </div>
+
+  <div class="transaction">
+    <div class="recent-transactions">
+      <div class="title">Recent Transactions</div>
+      <div class="view-all">View all</div>
+    </div>
+    <div class="icon-transaction">
+      <div class="icons-transactions">
+        <i class="lab la-apple"></i>
+      </div>
+      <div class="red"></div>
+      <h3>Apple Storre</h3>
+      <div class="view-all">- € 40.99</div>
+    </div>
+  </div>
+
+  <div class="tr2">
+    <div class="icon-transaction">
+      <div class="icons-transactions">
+        <i class="las la-mobile-alt"></i>
+      </div>
+      <h3>Mobile connection</h3>
+      <div class="view-all">- € 23.69</div>
+    </div>
+  </div>
+
+  <div class="tr3">
+    <div class="icon-transaction">
+      <div class="icons-transactions">
+        <i class="las la-mobile-alt"></i>
+      </div>
+      <h3>Apple Storre</h3>
+      <div class="view-all">- € 40.99</div>
+    </div>
+  </div>
+
+  <div class="tr4">
+    <div class="icon-transaction">
+      <div class="icons-transactions">
+        <i class="las la-horse-head"></i>
+      </div>
+      <h3>Zoo</h3>
+      <div class="view-all">- € 18.43</div>
+    </div>
+  </div>
+  <div class="tr5">
+    <div class="icon-transaction">
+      <div class="icons-transactions">
+        <i class="las la-mobile-alt"></i>
+      </div>
+      <h3>Apple Storre</h3>
+      <div class="view-all">- € 40.99</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h1><i class="las la-home"></i></h1>
+    <h1><i class="las la-inbox"></i></h1>
+    <h1><i class="las la-envelope-square"></i></h1>
+    <h1><i class="lar la-circle"></i></h1>
+  </div>
+</body>
+
+</html>
+
+<i class="las la-horse-head"></i>
